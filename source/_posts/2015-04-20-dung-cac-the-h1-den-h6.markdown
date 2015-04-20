@@ -2,6 +2,11 @@
 layout: post
 title: "DÙng các thẻ từ h1 đến h6"
 date: 2015-04-20 17:26:01 +0700
+description: Day la desciption, Cook, người kế vị Steve Jobs với vị trí là ông chủ của một công ty công nghệ khổng lồ trong năm 2011,  đã tỏ ra rất tức giận khi tham gia với một số nhà đầu tư phản động trong suốt phần hỏi đáp của cuộc họp cổ đông. Trả lời với các cuộc gọi
+keywords: 
+- blog
+- hoangddt
+tambay: day la may cai tam bay
 comments: true
 categories: 
 - test

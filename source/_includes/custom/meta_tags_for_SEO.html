@@ -1,14 +1,7 @@
 {% assign siteName = "Quoc Hoang Blog" %}
 {% assign defaultImageLink = "http://i.imgur.com/GaSz3Gl.jpg" %}
 
-{% capture titleName %}
-	{% if page.title %}
-		{% if site.titlecase %}
-			{{ page.title | titlecase }}
-		{% else %}
-			{{ page.title }}
-	{% endif %} - {% endif %}{{ site.title }}
-{% endcapture %}
+{% capture titleName %}{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %} - {% endif %}{{ site.title }}{% endcapture %}
 
 {% capture description %}
 	{% if page.description %}
@@ -18,24 +11,9 @@
 	{% endif %}
 {% endcapture %}
 
-{% capture siteURL %}
-	{{ site.url }}
-	{% if site.permalink contains '.html' %}
-		{{ page.url }}
-	{% else %}
-		{{ page.url | remove:'index.html' }}
-	{% endif %}
-{% endcapture %}
+{% capture siteURL %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' }}{% endif %}{% endcapture %}
 
-{% capture imageLink %}
-	{% if site.imageLink %}
-		{{ site.imageLink }}
-	{% elsif page.imageLink %}
-		{{ page.imageLink }}
-	{% else %}
-		{{ defaultImageLink }}
-	{% endif %}
-{% endcapture %}
+{% capture imageLink %}{% if site.imageLink %}{{ site.imageLink }}{% elsif page.imageLink %}{{ page.imageLink }}{% else %}{{ defaultImageLink }}{% endif %}{% endcapture %}
 
 
 
@@ -46,7 +24,7 @@
 <meta name="twitter:title" content="{{titleName}}"/>
 <meta name="twitter:site" content="@hoangddt"/>
 <meta name="twitter:domain" content="{{siteName}}"/>
-<meta name="twitter:image:src" content="imageLink"/>
+<meta name="twitter:image:src" content="{{imageLink}}"/>
 <meta name="twitter:creator" content="@hoangddt"/>
 <!-- og social -->
 <meta property="og:locale" content="en_US" />
@@ -55,7 +33,7 @@
 <meta property="og:description" content="{{description | strip_html | condense_spaces | truncate:150}}" />
 <meta property="og:url" content="{{siteURL}}" />
 <meta property="og:site_name" content="{{siteName}}" />
-<meta property="og:image" content="imageLink" />
+<meta property="og:image" content="{{imageLink}}" />
 
 <!-- article -->
 <meta property="article:publisher" content="https://www.facebook.com/hoangddt.net" />
@@ -68,5 +46,5 @@
 <!-- item prop for Google+-->
 <meta itemprop="name" content="{{titleName}}">
 <meta itemprop="description" content="{{description | strip_html | condense_spaces | truncate:150}}">
-<meta itemprop="image" content="imageLink">
+<meta itemprop="image" content="{{imageLink}}">
 <meta property=”fb:admins” content=”100002966771454” />

@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://hoangddt.net/vi
+url: http://blog.hoangddt.net/vi
 title: HOÀNG
 subtitle: Khám phá công nghệ
 author: hoangddt
@@ -27,12 +27,12 @@ email:
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
 root: /vi
-permalink: /blog/:year/:month/:title/
+permalink: /post/:year/:month/:title/
 source: source
 destination: public/vi
 plugins: plugins
 code_dir: downloads/code
-category_dir: blog/categories
+category_dir: post/categories
 markdown: kramdown
 kramdown:
   use_coderay: true

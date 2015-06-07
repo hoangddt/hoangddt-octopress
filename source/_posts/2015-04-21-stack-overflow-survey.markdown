@@ -10,7 +10,7 @@ categories:
 - survey
 - deal
 ---
-# Khảo sát năm 2015 của Stack Overflow
+<!--more-->
 
 Nếu bạn đang đọc bài này, có lẽ bạn là một nam developer khoảng hơn 20 tuổi. Bạn tự học lập trình bằng một máy tính chạy Windows và Notepad++. Bạn sử dụng Git và Javascript thường xuyên và uống 2 ly cà phê một ngày.
 Đó là **hồ sơ** chung của trung bình các developer Stack Overflow sau cuộc khảo sát [năm 2015](http://stackoverflow.com/research/developer-survey-2015) của Stack Overflow. Hãy nhìn vào cuộc khảo sát này rõ hơn.
